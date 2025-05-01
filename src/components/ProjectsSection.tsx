@@ -25,6 +25,10 @@ const ProjectsSection: React.FC = () => {
     document.body.style.overflow = '';
   };
 
+  const getImageUrl = (imageName: string) => {
+    return new URL(`/src/public/${imageName}`, import.meta.url).href;
+  };
+
   return (
     <section id="projects" className="section-padding bg-gray-950">
       <div className="container-custom">
@@ -32,7 +36,6 @@ const ProjectsSection: React.FC = () => {
           <h2 className="heading-lg mb-4 gradient-text">Mis Proyectos</h2>
           <p className="text-lg text-gray-400">
           Revisa algunos de mis trabajos recientes y proyectos personales.
-
           </p>
         </div>
 
@@ -73,7 +76,7 @@ const ProjectsSection: React.FC = () => {
             >
               <div className="relative h-64 overflow-hidden">
                 <img
-                  src={project.image}
+                  src={getImageUrl(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500"
                 />
@@ -129,14 +132,13 @@ const ProjectsSection: React.FC = () => {
           ))}
         </div>
 
-
         {/* Project Modal */}
         {selectedProject && (
           <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 flex items-center justify-center p-4">
             <div className="bg-gray-900 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
               <div className="relative">
                 <img
-                  src={selectedProject.image}
+                  src={getImageUrl(selectedProject.image)}
                   alt={selectedProject.title}
                   className="w-full h-64 md:h-80 object-cover"
                 />

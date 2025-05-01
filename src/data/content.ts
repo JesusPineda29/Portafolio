@@ -43,7 +43,7 @@ export const projects: Project[] = [
     id: "project1",
     title: "Blog del Cafe",
     description: "Sitio web responsivo con HTML, CSS, JavaScript y Bootstrap, enfocado en una experiencia de usuario fluida.",
-    image: "/src/public/cafe.png",
+    image: "cafe.png",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://github.com/johndoe/ecommerce",
     link: "https://comfy-cactus-ede1e4.netlify.app"
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     id: "project2",
     title: "Administrador de PAcientes de Veterinaria, Fullstack MERN",
     description: "Aplicación fullstack para la gestión de pacientes veterinarios utilizando el stack MERN (MongoDB, Express, React y Node.js) Permite a veterinarios registrar, editar y eliminar pacientes, con autenticación segura y manejo de sesiones. Login con JWT y CRUD completo de pacientes.",
-    image: "/src/public/MERN.png",
+    image: "MERN.png",
     tags: ["React", "MongoDB", "Express", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "Responsive Design" ],
     github: "https://github.com/JesusPineda29/apv_backend_deploy",
     link: "https://fullstack-admin-pacientes-mern.netlify.app"
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     id: "project3",
     title: "Buscador de Clima FETCH API",
     description: "Sitio web responsivo para obtener clima de ciudades usando Fetch API y API externa.",
-    image: "/src/public/clima.png",
+    image: "clima.png",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://github.com/JesusPineda29/Buscador-de-Clima-FETCH-API",
     link: "https://buscador-clima-fetch-api-8582e9.netlify.app"
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     id: "project3",
     title: "Cotizador de Prestamos - React",
     description: "El cotizador de precios permite a los usuarios ingresar los detalles de un préstamo (como el monto, plazo) y calcular el costo total con sus respectivos intereses. El proyecto está diseñado para ser simple, rápido y fácil de usar.",
-    image: "/src/public/prestamo.png",
+    image: "prestamo.png",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "Vite"],
     github: "https://github.com/JesusPineda29/cotizados_prestamos_react",
     link: "https://cotizador-prestamos-react-c7ba9a.netlify.app"
@@ -81,3 +81,4 @@ export const socialLinks: SocialLink[] = [
   { name: "GitHub", url: "https://github.com/JesusPineda29", icon: "github" },
   { name: "LinkedIn", url: "https://www.linkedin.com/in/jesús-pineda-630a3b300", icon: "linkedin" },
 ];
+
