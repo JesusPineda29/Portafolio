@@ -29,14 +29,14 @@ export const aboutContent = {
 
 export const skills: Skill[] = [
   { name: "JavaScript", icon: "code", level: 85 },
-  { name: "TypeScript", icon: "file-type", level: 75 },
+  { name: "HTML", icon: "file-type", level: 90 },
   { name: "React", icon: "react", level: 80 },
   { name: "Node.js", icon: "server", level: 70 },
   { name: "CSS/Tailwind", icon: "paintbrush", level: 85 },
   { name: "Figma", icon: "figma", level: 75 },
   { name: "Git", icon: "git-branch", level: 75 },
-  { name: "AWS", icon: "cloud", level: 65 },
-];
+  { name: "Express", icon: "cloud", level: 65 },
+]; 
 
 export const projects: Project[] = [
   {

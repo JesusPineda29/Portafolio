@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+// estados del cursor
 const Cursor: React.FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(true);

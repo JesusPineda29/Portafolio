@@ -54,7 +54,7 @@ const SkillsSection: React.FC = () => {
           <h3 className="text-xl font-bold text-white text-center mb-8">Otras Tecnologías y Herramientas</h3>
           
           <div className="flex flex-wrap justify-center gap-4">
-            {['HTML5', 'CSS3', 'SASS', 'Git', 'Webpack', 'Redux', 'Next.js', 'Express', 'MongoDB', 'PostgreSQL', 'Docker', 'Jest', 'Cypress', 'Storybook'].map((tech) => (
+            {['TypeScript', 'CSS3', 'SASS', 'Git', 'Webpack', 'Redux', 'Next.js', 'MongoDB', 'PostgreSQL', 'Docker', 'Jest'].map((tech) => (
               <div 
                 key={tech}
                 className="px-4 py-2 bg-gray-800 rounded-full text-gray-300 hover:bg-emerald-900/50 hover:text-white transition-colors duration-300"
