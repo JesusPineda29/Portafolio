@@ -11,7 +11,7 @@ import Cursor from './components/Cursor';
 function App() {
   // Update title
   useEffect(() => {
-    document.title = "John Doe | Full Stack Developer";
+    document.title = "Jesús Pineda | Full Stack Developer";
   }, []);
 
   return (
