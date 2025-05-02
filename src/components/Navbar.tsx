@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { navItems } from '../data/content';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
+ 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +24,10 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    // In a real implementation, this would toggle classes on the document body
-  };
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  //   // In a real implementation, this would toggle classes on the document body
+  // };
 
   return (
     <header
@@ -55,7 +55,10 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
 
-          {/* <button 
+          
+          {/*
+          boton darkMode
+          <button 
             onClick={toggleDarkMode}
             className="p-2 rounded-full hover:bg-gray-800 transition-colors"
             aria-label="Toggle dark mode"
@@ -70,13 +73,13 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navigation */}
         <div className="flex items-center md:hidden">
-          <button 
+          {/* <button 
             onClick={toggleDarkMode}
             className="p-2 mr-2 rounded-full hover:bg-gray-800 transition-colors"
             aria-label="Toggle dark mode"
           >
             {darkMode ? <Sun size={20} className="text-emerald-500" /> : <Moon size={20} className="text-emerald-500" />}
-          </button>
+          </button> */}
 
           <button
             onClick={toggleMenu}
@@ -86,11 +89,12 @@ const Navbar: React.FC = () => {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
+
       </div>
 
 
       {/* Mobile Menu */}
-      <div
+      {/* <div
         className={`md:hidden absolute top-full left-0 w-full bg-gray-900 shadow-lg transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
@@ -117,7 +121,41 @@ const Navbar: React.FC = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
+
+      {/* Mobile Menu Optimizado */}
+<div
+  className={`md:hidden fixed top-16 left-0 w-full bg-gray-900/95 backdrop-blur-md shadow-lg transition-all duration-300 z-40 ${
+    isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+  }`}
+>
+  <ul className="container-custom py-6 flex flex-col space-y-4">
+    {navItems.map((item) => (
+      <li key={item.href}>
+        <a
+          href={item.href}
+          className="block text-center text-lg text-gray-300 hover:text-emerald-500 transition-colors"
+          onClick={() => setIsOpen(false)}
+        >
+          {item.label}
+        </a>
+      </li>
+    ))}
+    <li>
+      <a 
+        href="#contact" 
+        className="btn btn-primary mx-auto mt-2"
+        onClick={() => setIsOpen(false)}
+      >
+        Contáctame
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
+
     </header>
   );
 };
