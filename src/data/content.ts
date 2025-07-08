@@ -52,7 +52,7 @@ export const projects: Project[] = [
     id: "project2",
     title: "Administrador de PAcientes de Veterinaria, Fullstack MERN",
     description: "Aplicación fullstack para la gestión de pacientes veterinarios utilizando el stack MERN (MongoDB, Express, React y Node.js) Permite a veterinarios registrar, editar y eliminar pacientes, con autenticación segura y manejo de sesiones. Login con JWT y CRUD completo de pacientes.",
-    image: "/MERN.png",
+    image: "MERN.png",
     tags: ["React", "MongoDB", "Express", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "Responsive Design" ],
     github: "https://github.com/JesusPineda29/apv_backend_deploy",
     link: "https://fullstack-admin-pacientes-mern.netlify.app"

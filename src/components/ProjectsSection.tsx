@@ -26,7 +26,7 @@ const ProjectsSection: React.FC = () => {
   };
 
   const getImageUrl = (imageName: string) => {
-    return new URL(`/src/public/${imageName}`, import.meta.url).href;
+    return new URL(`/public/${imageName}`, import.meta.url).href;
   };
 
   return (

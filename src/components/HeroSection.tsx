@@ -130,7 +130,7 @@ const HeroSection: React.FC = () => {
               {/* Imagen + gradiente: cambia según tamaño */}
               <div className="relative w-full h-64 lg:h-[550px]">
                 {/* Imagen de fondo */}
-                <div className="absolute inset-0 bg-[url('/src/public/FOTOinfantil.png')] bg-cover bg-center" />
+                <div className="absolute inset-0 bg-[url('/public/FOTOinfantil.png')] bg-cover bg-center" />
                 {/* Gradiente encima de la imagen */}
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/90 to-transparent opacity-60 z-10" />
 
