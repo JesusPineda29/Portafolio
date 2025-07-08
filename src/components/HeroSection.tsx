@@ -5,14 +5,13 @@ import { personalInfo, socialLinks } from '../data/content';
 const HeroSection: React.FC = () => {
   const textRef = useRef<HTMLSpanElement>(null);
 
-  {/*Animación */ }
   useEffect(() => {
-    const titles = ["Full Stack Developer", "Fronted Developer", "solucionador de problemas"];
+    const titles = ["Full Stack Developer", "Frontend Developer", "Solucionador de problemas"];
     let currentTitleIndex = 0;
     let currentCharIndex = 0;
     let isDeleting = false;
     let typingSpeed = 150;
-    let pauseDuration = 1500;
+    const pauseDuration = 1500;
 
     const type = () => {
       const currentTitle = titles[currentTitleIndex];
@@ -43,12 +42,14 @@ const HeroSection: React.FC = () => {
     };
 
     type();
-
-    return () => {
-      // Cleanup if needed
-    };
   }, []);
 
+  const InfoCard = () => (
+    <div className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 p-5 rounded-xl">
+      <p className="text-emerald-400 font-medium">{personalInfo.availability}</p>
+      <p className="text-gray-300 mt-1">{personalInfo.location}</p>
+    </div>
+  );
 
   return (
     <section id="home" className="min-h-screen relative flex items-center pt-16 bg-gray-950 bg-hero-pattern overflow-hidden">
@@ -67,7 +68,7 @@ const HeroSection: React.FC = () => {
               {personalInfo.name}
             </h1>
             <div className="text-xl md:text-2xl text-gray-300 font-medium min-h-[36px] mb-2">
-              Yo Soy <span ref={textRef} className="text-emerald-500"></span>
+              Soy <span ref={textRef} className="text-emerald-500"></span>
               <span className="animate-pulse">|</span>
             </div>
             <p className="text-lg text-gray-400 max-w-2xl">
@@ -84,7 +85,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-6 mt-8">
-              <div className="h-px w-10 bg-gray-700"></div> {/*Linea Decorativa */}
+              <div className="h-px w-10 bg-gray-700"></div>
               <div className="flex gap-4">
                 {socialLinks.map((link) => (
                   <a
@@ -97,80 +98,34 @@ const HeroSection: React.FC = () => {
                   >
                     {link.icon === 'github' && <Github size={18} />}
                     {link.icon === 'linkedin' && <Linkedin size={18} />}
-
                   </a>
                 ))}
               </div>
             </div>
           </div>
 
-
           {/* Hero Image */}
-          {/* <div className="lg:col-span-2 relative p-10">
-            <div className="relative w-full h-[550px] rounded-2xl overflow-hidden bg-gray-900 border-2 border-emerald-900/50 shadow-xl shadow-emerald-900/20">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-emerald-900/90 to-transparent opacity-60 z-10"></div>
-              <div className="absolute top-0 left-0 w-full h-full bg-[url('/src/public/FOTOinfantil.png')] bg-cover bg-center"></div>
-              <div className="absolute bottom-0 left-0 w-full p-6 z-20">
-                <div className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 p-5 rounded-xl">
-                  <p className="text-emerald-400 font-medium">{personalInfo.availability}</p>
-                  <p className="text-gray-300 mt-1">{personalInfo.location}</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
-
-
-
-
           <div className="lg:col-span-2 p-4 lg:p-10">
-            {/* Contenedor general */}
             <div className="w-full rounded-2xl overflow-hidden bg-gray-900 border-2 border-emerald-900/50 shadow-xl shadow-emerald-900/20">
-
-              {/* Imagen + gradiente: cambia según tamaño */}
               <div className="relative w-full h-64 lg:h-[550px]">
-                {/* Imagen de fondo */}
                 <div className="absolute inset-0 bg-[url('/public/FOTOinfantil.png')] bg-cover bg-center" />
-                {/* Gradiente encima de la imagen */}
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/90 to-transparent opacity-60 z-10" />
 
-                {/* En pantallas grandes, la caja se posiciona dentro de este bloque */}
+                {/* Info card for desktop */}
                 <div className="hidden lg:block absolute bottom-0 left-0 w-full p-6 z-20">
-                  <div className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 p-5 rounded-xl">
-                    <p className="text-emerald-400 font-medium">{personalInfo.availability}</p>
-                    <p className="text-gray-300 mt-1">{personalInfo.location}</p>
-                  </div>
+                  <InfoCard />
                 </div>
               </div>
 
-              {/* En pantallas pequeñas, la caja va debajo del bloque visual */}
+              {/* Info card for mobile */}
               <div className="block lg:hidden p-6">
-                <div className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 p-5 rounded-xl">
-                  <p className="text-emerald-400 font-medium">{personalInfo.availability}</p>
-                  <p className="text-gray-300 mt-1">{personalInfo.location}</p>
-                </div>
+                <InfoCard />
               </div>
-
             </div>
           </div>
-
         </div>
 
-
-
-
-
-
-
         {/* Scroll Down Indicator */}
-        {/* <a
-          href="#about"
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-emerald-500 hover:text-emerald-400 transition-colors"
-        >
-          <span className="text-sm mb-2">Desliza hacia abajo</span>
-          <ArrowDown className="animate-bounce" size={20} />
-        </a> */}
-
         <a
           href="#about"
           className="hidden lg:flex absolute bottom-10 left-1/2 transform -translate-x-1/2 flex-col items-center text-emerald-500 hover:text-emerald-400 transition-colors"

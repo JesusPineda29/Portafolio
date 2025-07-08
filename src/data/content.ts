@@ -15,7 +15,7 @@ export const navItems: NavItem[] = [
   { label: "Sobre mí ", href: "#about" },
   { label: "Habilidades", href: "#skills" },
   { label: "Proyectos", href: "#projects" },
-  { label: "Contacto", href: "#contact" },
+  // { label: "Contacto", href: "#contact" },
 ];
 
 export const aboutContent = {
@@ -41,6 +41,52 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     id: "project1",
+    title: "Administrador de Pacientes de Veterinaria, Fullstack MERN",
+    description: "Para poder iniciar sesión email: email@email.com, contraseña: password. Aplicación fullstack para la gestión de pacientes veterinarios utilizando el stack MERN (MongoDB, Express, React y Node.js) Permite a veterinarios registrar, editar y eliminar pacientes, con autenticación segura y manejo de sesiones. Login con JWT y CRUD completo de pacientes.",
+    image: "MERN.png",
+    tags: ["React", "MongoDB", "Express", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "Responsive Design", "MERN", "JWT", "CRUD", "Autenticación", "Sesiones"],
+    github: "https://github.com/JesusPineda29/apv_backend_deploy",
+    link: "https://fullstack-admin-pacientes-mern.netlify.app"
+  },
+  {
+    id: "project2",
+    title: "Administrador de Productos, Fullstack PERN",
+    description: "Aplicación fullstack para la gestión de productos utilizando el stack PERN (PostgreSQL, Express, React y Node.js) Permite a usuarios registrar, editar y eliminar productos, CRUD completo de productos.",
+    image: "producto.png",
+    tags: ["React", "TypeScript", "Express", "Vite", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "PostgreSQL", "PERN", "Jest" ],
+    github: "https://github.com/JesusPineda29/apv_backend_deploy",
+    link: "https://frontend-pern-admin-products.vercel.app"
+  },
+
+
+
+
+
+
+
+  {
+    id: "project3",
+    title: "Cotizador Cripto API",
+    description: "App web responsiva que permite consultar y comparar precios de criptomonedas en tiempo real. Desarrollada con React, TypeScript y Vite, utiliza Zustand para el manejo de estado y Zod para validar datos obtenidos desde dos APIs externas. Rápida, precisa y con arquitectura limpia.",
+    image: "cripto.png",
+    tags: ["React", "TypeScript", "Vite", "Zustand", "Zod", "Consumo de API", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/johndoe/ecommerce",
+    link: "https://cotizador-typescript-react.netlify.app"
+  },
+
+
+
+  {
+    id: "project4",
+    title: "Buscador de Clima",
+    description: "Una aplicación web intuitiva que permite a los usuarios consultar el clima actual de cualquier ciudad del mundo. Simplemente se selecciona un país, se escribe el nombre de la ciudad y la aplicación muestra la temperatura actual, la máxima, la mínima y la sensación térmica.",
+    image: "clima.png",
+    tags: ["React", "TypeScript", "Vite", "HTML", "CSS Modules", "JavaScript", "Zod", "Consumo de API"],
+    github: "https://github.com/JesusPineda29/Buscador-de-Clima-FETCH-API",
+    link: "https://buscador-clima-api-ts-react.netlify.app"
+  },
+  {
+    id: "project5",
     title: "Blog del Cafe",
     description: "Sitio web responsivo con HTML, CSS, JavaScript y Bootstrap, enfocado en una experiencia de usuario fluida.",
     image: "cafe.png",
@@ -49,25 +95,7 @@ export const projects: Project[] = [
     link: "https://comfy-cactus-ede1e4.netlify.app"
   },
   {
-    id: "project2",
-    title: "Administrador de PAcientes de Veterinaria, Fullstack MERN",
-    description: "Aplicación fullstack para la gestión de pacientes veterinarios utilizando el stack MERN (MongoDB, Express, React y Node.js) Permite a veterinarios registrar, editar y eliminar pacientes, con autenticación segura y manejo de sesiones. Login con JWT y CRUD completo de pacientes.",
-    image: "MERN.png",
-    tags: ["React", "MongoDB", "Express", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "Responsive Design" ],
-    github: "https://github.com/JesusPineda29/apv_backend_deploy",
-    link: "https://fullstack-admin-pacientes-mern.netlify.app"
-  },
-  {
-    id: "project3",
-    title: "Buscador de Clima FETCH API",
-    description: "Sitio web responsivo para obtener clima de ciudades usando Fetch API y API externa.",
-    image: "clima.png",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    github: "https://github.com/JesusPineda29/Buscador-de-Clima-FETCH-API",
-    link: "https://buscador-clima-fetch-api-8582e9.netlify.app"
-  },
-  {
-    id: "project3",
+    id: "project6",
     title: "Cotizador de Prestamos - React",
     description: "El cotizador de precios permite a los usuarios ingresar los detalles de un préstamo (como el monto, plazo) y calcular el costo total con sus respectivos intereses. El proyecto está diseñado para ser simple, rápido y fácil de usar.",
     image: "prestamo.png",
