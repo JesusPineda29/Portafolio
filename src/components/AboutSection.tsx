@@ -18,7 +18,7 @@ const AboutSection: React.FC = () => {
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border-2 border-emerald-900/50 shadow-xl shadow-emerald-900/20">
               <img 
-                src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                src="/Computer.jpg" 
                 alt="About Me" 
                 className="w-full h-auto"
               />
