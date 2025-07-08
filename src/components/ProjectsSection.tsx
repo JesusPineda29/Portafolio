@@ -63,7 +63,7 @@ const ProjectsSection: React.FC = () => {
 
   // Get image URL with fallback
   const getImageUrl = useCallback((imageName: string) => {
-    return `/public/${imageName}`;
+    return `/${imageName}`;
   }, []);
 
   // Filter button styles

@@ -108,7 +108,7 @@ const HeroSection: React.FC = () => {
           <div className="lg:col-span-2 p-4 lg:p-10">
             <div className="w-full rounded-2xl overflow-hidden bg-gray-900 border-2 border-emerald-900/50 shadow-xl shadow-emerald-900/20">
               <div className="relative w-full h-64 lg:h-[550px]">
-                <div className="absolute inset-0 bg-[url('/public/FOTOinfantil.png')] bg-cover bg-center" />
+                <div className="absolute inset-0 bg-[url('/FOTOinfantil.png')] bg-cover bg-center" />
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/90 to-transparent opacity-60 z-10" />
 
                 {/* Info card for desktop */}
