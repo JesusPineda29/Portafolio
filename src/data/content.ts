@@ -58,14 +58,22 @@ export const projects: Project[] = [
     link: "https://patyuba.netlify.app"
   },
 
-
+  {
+    id: "project3",
+    title: " video juego Snake",
+    description: "Una versión web del clásico Snake, desarrollada completamente desde cero con JavaScript puro y HTML5, sin librerías ni frameworks. Inspirado en la estética de los arcades ochenteros, el juego ofrece una interfaz retro con colores neón, sombras brillantes y efectos visuales que evocan las antiguas pantallas CRT. Es jugable directamente desde el navegador, sin necesidad de instalación.",
+    image: "snake.png",
+    tags: ["JavaScript", "HTML", "Tailwind CSS"],
+    github: "https://github.com/JesusPineda29/snakeGame",
+    link: "https://snake-jp.netlify.app"
+  },
 
 
 
 
 
   {
-    id: "project3",
+    id: "project4",
     title: "Cotizador Cripto API",
     description: "App web responsiva que permite consultar y comparar precios de criptomonedas en tiempo real. Desarrollada con React, TypeScript y Vite, utiliza Zustand para el manejo de estado y Zod para validar datos obtenidos desde dos APIs externas. Rápida, precisa y con arquitectura limpia.",
     image: "cripto.png",
@@ -77,7 +85,7 @@ export const projects: Project[] = [
 
 
   {
-    id: "project4",
+    id: "project5",
     title: "Buscador de Clima",
     description: "Una aplicación web intuitiva que permite a los usuarios consultar el clima actual de cualquier ciudad del mundo. Simplemente se selecciona un país, se escribe el nombre de la ciudad y la aplicación muestra la temperatura actual, la máxima, la mínima y la sensación térmica.",
     image: "clima.png",
@@ -85,15 +93,7 @@ export const projects: Project[] = [
     github: "https://github.com/JesusPineda29/Buscador-de-Clima-FETCH-API",
     link: "https://buscador-clima-api-ts-react.netlify.app"
   },
-  {
-    id: "project5",
-    title: "Blog del Cafe",
-    description: "Sitio web responsivo con HTML, CSS, JavaScript y Bootstrap, enfocado en una experiencia de usuario fluida.",
-    image: "cafe.png",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    github: "https://github.com/johndoe/ecommerce",
-    link: "https://comfy-cactus-ede1e4.netlify.app"
-  },
+
   {
     id: "project6",
     title: "Cotizador de Prestamos - React",
@@ -102,6 +102,26 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "Vite"],
     github: "https://github.com/JesusPineda29/cotizados_prestamos_react",
     link: "https://cotizador-prestamos-react-c7ba9a.netlify.app"
+  },
+
+    {
+    id: "project7",
+    title: "evento",
+    description: "Sitio web responsivo con HTML, CSS, JavaScript y Bootstrap, enfocado en una experiencia de usuario fluida.",
+    image: "cafe.png",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    github: "https://github.com/johndoe/ecommerce",
+    link: "https://comfy-cactus-ede1e4.netlify.app"
+  },
+
+    {
+    id: "project8",
+    title: "Blog del Cafe",
+    description: "Sitio web responsivo con HTML, CSS, JavaScript y Bootstrap, enfocado en una experiencia de usuario fluida.",
+    image: "cafe.png",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    github: "https://github.com/johndoe/ecommerce",
+    link: "https://comfy-cactus-ede1e4.netlify.app"
   }
 ];
 
