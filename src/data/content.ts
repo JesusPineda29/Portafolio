@@ -50,12 +50,12 @@ export const projects: Project[] = [
   },
   {
     id: "project2",
-    title: "Administrador de Productos, Fullstack PERN",
-    description: "Aplicación fullstack para la gestión de productos utilizando el stack PERN (PostgreSQL, Express, React y Node.js) Permite a usuarios registrar, editar y eliminar productos, CRUD completo de productos.",
-    image: "producto.png",
-    tags: ["React", "TypeScript", "Express", "Vite", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "PostgreSQL", "PERN", "Jest" ],
-    github: "https://github.com/JesusPineda29/apv_backend_deploy",
-    link: "https://frontend-pern-admin-products.vercel.app"
+    title: " Web Profesional para Distribuidora de Materias Primas",
+    description: "Esta página fue creada para una distribuidora especializada en el suministro de materias primas para diferentes sectores industriales. Su objetivo es comunicar confianza, profesionalismo y facilitar el contacto directo con clientes potenciales. La estructura está optimizada para destacar los productos y generar conversiones a través de  medios de comunicación y contacto directo por WhatsApp.",
+    image: "pat.png",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "JavaScript", "HTML"],
+    github: "https://github.com/JesusPineda29/Patyuba",
+    link: "https://patyuba.netlify.app"
   },
 
 
