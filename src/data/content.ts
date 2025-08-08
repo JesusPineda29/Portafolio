@@ -36,7 +36,7 @@ export const skills: Skill[] = [
   { name: "Figma", icon: "figma", level: 75 },
   { name: "Git", icon: "git-branch", level: 75 },
   { name: "Express", icon: "cloud", level: 65 },
-]; 
+];
 
 export const projects: Project[] = [
   {
@@ -104,17 +104,17 @@ export const projects: Project[] = [
     link: "https://cotizador-prestamos-react-c7ba9a.netlify.app"
   },
 
-    {
+  {
     id: "project7",
-    title: "evento",
-    description: "Sitio web responsivo con HTML, CSS, JavaScript y Bootstrap, enfocado en una experiencia de usuario fluida.",
-    image: "cafe.png",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    github: "https://github.com/johndoe/ecommerce",
-    link: "https://comfy-cactus-ede1e4.netlify.app"
+    title: "Festival de música",
+    description: "Sitio web para festival con diseño moderno y responsivo.",
+    image: "festival.png",
+    tags: ["HTML", "SCSS", "JavaScript", "Gulp"],
+    github: "https://github.com/JesusPineda29/festivalMusica",
+    link: "https://magical-pie-b0bb57.netlify.app"
   },
 
-    {
+  {
     id: "project8",
     title: "Blog del Cafe",
     description: "Sitio web responsivo con HTML, CSS, JavaScript y Bootstrap, enfocado en una experiencia de usuario fluida.",
