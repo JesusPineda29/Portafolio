@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 import { personalInfo } from '../data/content';
 
 const ContactSection: React.FC = () => {
   const [state, handleSubmit] = useForm("mwpqzqny");
+  const formRef = useRef<HTMLFormElement>(null);
+  
+  // Reset form when submission is successful
+  useEffect(() => {
+    if (state.succeeded) {
+      formRef.current?.reset();
+    }
+  }, [state.succeeded]);
   
   return (
     <section id="contact" className="section-padding bg-gray-900">
@@ -91,7 +99,7 @@ const ContactSection: React.FC = () => {
                 </div>
               )}
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-gray-300 mb-2">Tu Nombre</label>
