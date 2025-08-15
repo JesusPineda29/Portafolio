@@ -55,7 +55,7 @@ export const projects: Project[] = [
     image: "pat.png",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "JavaScript", "HTML"],
     github: "https://github.com/JesusPineda29/Patyuba",
-    link: "https://patyuba.netlify.app"
+    link: "https://patyuba.com/"
   },
 
   {
@@ -67,9 +67,6 @@ export const projects: Project[] = [
     github: "https://github.com/JesusPineda29/snakeGame",
     link: "https://snake-jp.netlify.app"
   },
-
-
-
 
 
   {
